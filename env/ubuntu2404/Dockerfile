@@ -50,7 +50,7 @@ RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 RUN curl -sS https://starship.rs/install.sh | sh -s -- --yes
 
 COPY ../../dotfiles /dotfiles
-COPY .ssh .ssh
+COPY env/ubuntu2404/.ssh /.ssh
 
 RUN bash dotfiles/.bin/install.sh
 
