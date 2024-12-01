@@ -1,11 +1,16 @@
-Attach to the development environment:
+###### git clone with submodules
+https:
+
+``` git clone --recurse-submodules https://github.com/sg3t41/devenv.git ```
+
+###### Attach to the development environment:
 
 ``` make ```
 
-config env:
+###### config env:
 
 ``` env/ ```
 
-dependences:
+###### dependences:
 
 [dotfiles/](https://github.com/sg3t41/dotfiles)
