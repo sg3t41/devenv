@@ -6,7 +6,15 @@ services:
     container_name: devenv
     environment:
       - DEVENV_VOLUME_RELATIVE_PATH=${DEVENV_VOLUME_RELATIVE_PATH}
+      - DEVENV_GIT_USERNAME=${DEVENV_GIT_USERNAME}
+      - DEVENV_GIT_EMAIL=${DEVENV_GIT_EMAIL}
     volumes:
       - "${DEVENV_VOLUME_RELATIVE_PATH}:/workspace"
     tty: true
     stdin_open: true
+    command: bash -c "
+      git config --global user.name ${DEVENV_GIT_USERNAME} && 
+      git config --global user.email ${DEVENV_GIT_EMAIL} && 
+      git config --global --add safe.directory /workspace && 
+      ssh -T git@github.com
+      "
