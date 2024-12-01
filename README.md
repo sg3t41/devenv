@@ -1,7 +1,7 @@
 ###### git clone with submodules
 https:
 
-``` git clone --recurse-submodules https://github.com/sg3t41/devenv.git ```
+``` git clone --recurse-submodules https://github.com/sg3t41/devenv.git .devenv && .devenv```
 
 ###### Attach to the development environment:
 
