@@ -1,1 +1,36 @@
 .env
+
+# Vim/Neovim swap files
+*.swp
+*.swo
+*.swn
+
+# Vim/Neovim undo files
+*.un~
+
+# Vim/Neovim backup files
+*.bak
+*.tmp
+*.save
+
+# Emacs backup files
+*~
+
+# macOS specific metadata
+.DS_Store
+
+# Windows specific metadata
+Thumbs.db
+
+# Temporary files created by editors or OS
+*.lock
+*.log
+*.cache
+*.tmp
+*.temp
+
+# IDE specific
+.idea/
+.vscode/
+*.iml
+
