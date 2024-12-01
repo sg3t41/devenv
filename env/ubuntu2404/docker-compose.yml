@@ -1,0 +1,12 @@
+services:
+  devenv:
+    build:
+      context: ../../
+      dockerfile: env/ubuntu2404/Dockerfile
+    container_name: devenv
+    environment:
+      - DEVENV_VOLUME_RELATIVE_PATH=${DEVENV_VOLUME_RELATIVE_PATH}
+    volumes:
+      - "${DEVENV_VOLUME_RELATIVE_PATH}:/workspace"
+    tty: true
+    stdin_open: true
