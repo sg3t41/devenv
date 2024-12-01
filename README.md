@@ -6,6 +6,6 @@ config env:
 
 ``` env/ ```
 
-dependensiec:
+dependences:
 
 [dotfiles/](https://github.com/sg3t41/dotfiles)
