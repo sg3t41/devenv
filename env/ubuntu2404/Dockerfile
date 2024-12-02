@@ -53,6 +53,6 @@ COPY dotfiles /dotfiles
 
 RUN bash dotfiles/.bin/install.sh
 
-# RUN nvim --headless :Lazy! +qa
+RUN nvim --headless :Lazy! +qa
 
 CMD ["/bin/bash"]
